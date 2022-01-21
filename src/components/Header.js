@@ -7,8 +7,11 @@ const Header = () => {
   return (
     <header id='header' className='background-img-intro'>
       <div className='full-width'>
-        <Logo />
-        <Nav />
+        <div className='header-top'>
+          <Logo />
+          <Nav />
+        </div>
+
         <Intro />
       </div>
     </header>

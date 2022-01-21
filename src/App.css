@@ -2,37 +2,93 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/***** HEADER SECTION *****/
+header {
+  height: 100vh;
+}
+#header .full-width {
+  padding: 80px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-top {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+/***** GRID *****/
+.full-width {
+  width: 1200px;
+  margin: 30px auto;
+  overflow: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.half-width {
+  width: 600px;
+  float: left;
+}
+
+.third-width {
+  width: 400px;
+  float: left;
+}
+
+/***** LOGO *****/
+#logo-icon {
+  height: 100px;
+  width: 100px;
+}
+#logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Shrikhand', cursive;
+  font-size: 2.5rem;
+}
+.sev {
+  color: #d9a64b;
+  padding: 0px 10px;
+}
+.welker {
+  color: #348ba0;
+}
+
+/***** NAV SECITON *****/
+
+nav {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.5rem;
+}
+
+#project-nav,
+#project-nav:visited {
+  color: #de91aa;
+}
+#about-nav,
+#about-nav:visited {
+  color: #d9a64b;
+  padding-left: 25%;
+}
+#contact-nav,
+#contact-nav:visited {
+  color: #348ba0;
+  padding-left: 25%;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-self: middle;
+}
+nav ul li {
+  list-style-type: none;
+}
+/***** INTRO SECITON *****/
+.intro {
+  font-size: 3.5rem;
+  line-height: ;
+
+  text-align: center;
+}
+
+#intro-full-width {
 }
