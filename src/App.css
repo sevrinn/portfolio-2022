@@ -1,3 +1,4 @@
+/* MOBILE FIRST */
 .App {
 	text-align: center;
 	background: #444;
@@ -22,7 +23,7 @@ header {
 
 /***** GRID *****/
 .full-width {
-	max-width: 1200px;
+	max-width: 80vw;
 	margin: 20px auto;
 	overflow: auto;
 }
@@ -64,7 +65,7 @@ header {
 
 nav {
 	font-family: 'Shrikhand', cursive;
-	font-size: 5vw;
+	font-size: 1em;
 	max-width: 500px;
 }
 
@@ -87,7 +88,7 @@ nav ul {
 	display: flex;
 	justify-content: center;
 	align-self: middle;
-	gap: 5vw;
+	gap: 10px;
 	padding: 0;
 }
 nav ul li {
@@ -95,12 +96,30 @@ nav ul li {
 }
 /***** INTRO SECITON *****/
 .intro {
-	font-size: 8vw;
+	font-size: 1em;
 	padding: 0 10px;
 	text-align: center;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 #intro-full-width {
 	margin: 0 auto;
 	padding: 0 8px;
+}
+
+/********** DESKTOP ******************/
+@media only screen and (min-width: 1200px) {
+	header {
+		height: 400px;
+	}
+	.header-top {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	#logo {
+		display: flex;
+		flex-direction: row;
+	}
 }
