@@ -1,5 +1,9 @@
 /* MOBILE FIRST */
+body {
+  background-color: #444;
+}
 .App {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -7,7 +11,8 @@
   height: 100vh;
   color: white;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
-  gap: 20px;
+  /* padding-left: 20px; */
+  float: none;
 }
 
 h1,
@@ -17,11 +22,12 @@ h4,
 h5,
 h6 {
   font-family: 'Shrikhand', cursive;
+  text-shadow: black 5px 5px;
 }
 
 /***** HEADER SECTION *****/
 header {
-  height: 60vh;
+  /* height: 63vh; */
   margin-bottom: 20px;
 }
 #header .full-width {
@@ -83,20 +89,25 @@ nav {
   max-width: 500px;
 }
 
+nav a {
+  text-decoration: none;
+}
+
 #projects-nav a,
 #projects-nav a:visited {
   color: #de91aa;
+  text-shadow: black 5px 5px;
 }
 
 #about-nav a,
 #about-nav a:visited {
   color: #d9a64b;
-  /* padding-left: 25%; */
+  text-shadow: black 5px 5px;
 }
 #contact-nav a,
 #contact-nav a:visited {
   color: #348ba0;
-  /* padding-left: 25%; */
+  text-shadow: black 5px 5px;
 }
 nav ul {
   display: flex;
@@ -113,12 +124,12 @@ nav ul li {
   font-size: 1.5em;
   padding: 0 10px;
   text-align: center;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
 #intro-full-width {
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 0 8px;
 }
 
@@ -126,10 +137,77 @@ nav ul li {
 .project-title {
   color: #de91aa;
 }
+
+.projects-container {
+  display: flex;
+  align-content: stretch;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  gap: 40px 20px;
+  margin: 0 auto;
+}
+.project {
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #de91aa;
+  border-radius: 5px;
+  box-shadow: black 5px 5px;
+}
+
+.project-copy,
+.project img {
+  width: 300px;
+}
+.project img {
+  border-radius: 5px;
+}
+
+.project-copy {
+  margin: 0 auto;
+  text-align: start;
+}
+.project h4 {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 2px;
+  text-shadow: black 2px 2px;
+}
 /******* ABOUT SECTION **********/
 .about-title {
   color: #d9a64b;
 }
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+  gap: 40px 20px;
+}
+
+.about-img {
+  width: 250px;
+  box-shadow: #d9a64b -30px 0px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+  border-bottom-left-radius: 50%;
+}
+
+.about-copy {
+  width: auto;
+  text-align: justify;
+  background-color: #d9a64b;
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: black 5px 5px;
+}
+
 /******* CONTACT SECTION **********/
 .contact-title {
   color: #348ba0;
@@ -161,5 +239,35 @@ nav ul li {
 
   .intro {
     font-size: 2em;
+  }
+
+  .about-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-img {
+    width: 340px;
+    box-shadow: #d9a64b -100px 0px;
+  }
+
+  .about-copy {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .about-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-img {
+    width: 340px;
+    box-shadow: #d9a64b -100px 0px;
+  }
+
+  .about-copy {
+    width: 400px;
   }
 }

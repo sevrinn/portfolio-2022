@@ -6,16 +6,18 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
+import BirthdayReminder from './components/BirthdayReminder'
+
 function App() {
-	return (
-		<div className='App'>
-			<Header />
-			<Projects />
-			<About />
-			<Contact />
-			<Footer />
-		</div>
-	)
+  return (
+    <div className='App'>
+      <Header />
+      <Projects />
+      <About />
+      <Contact />
+      <Footer />
+    </div>
+  )
 }
 
 export default App
