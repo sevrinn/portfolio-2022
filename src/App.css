@@ -202,6 +202,7 @@ nav ul li {
 .about-copy {
   width: auto;
   text-align: justify;
+  align-self: stretch;
   background-color: #d9a64b;
   padding: 20px 40px;
   border-radius: 5px;
@@ -212,6 +213,42 @@ nav ul li {
 .contact-title {
   color: #348ba0;
 }
+
+.contact-container {
+  padding: 25px;
+}
+
+.contact-form-container {
+  background-color: #348ba0;
+  width: auto;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: black 5px 5px;
+}
+
+.contact-form {
+  margin: 0 auto;
+}
+.contact-form p input,
+.contact-form p textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 0 10px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact-form button {
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  border: white solid 2px;
+  background: transparent;
+  color: white;
+}
+
 /******* FOOTER SECTION ***********/
 .footer {
   text-align: center;
@@ -254,6 +291,10 @@ nav ul li {
   .about-copy {
     width: 400px;
   }
+
+  /* .contact-form p text-area {
+    resize: none;
+  } */
 }
 
 @media only screen and (min-width: 600px) {
