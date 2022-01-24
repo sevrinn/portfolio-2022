@@ -1,9 +1,7 @@
-html {
-  background-color: rgb(117, 56, 230);
-}
 .birthday-page {
   background-color: rgb(117, 56, 230);
   padding: 100px;
+  height: 100vh;
 }
 
 .birthday-container {
