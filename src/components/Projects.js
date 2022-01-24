@@ -5,7 +5,7 @@ const Projects = () => {
   const [projects, setProjects] = useState(projectData)
   console.log(projects)
   return (
-    <div>
+    <div id='projects'>
       <h1 className='project-title'>projects</h1>
       <div className='projects-container'>
         {projects.map((project) => {
