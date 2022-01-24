@@ -247,6 +247,21 @@ nav ul li {
   border: white solid 2px;
   background: transparent;
   color: white;
+  cursor: pointer;
+}
+
+.contact-links {
+  display: flex;
+  margin: 40px auto;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  max-width: 500px;
+  /* padding: ; */
+}
+
+.contact-links a,
+.contact-links a:visited {
+  color: white;
 }
 
 /******* FOOTER SECTION ***********/
