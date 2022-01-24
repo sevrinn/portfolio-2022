@@ -1,8 +1,10 @@
 import React from 'react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { AiFillTwitterCircle } from 'react-icons/ai'
 
 const Contact = () => {
   return (
-    <div className='contact-container'>
+    <div className='contact-container' id='contact'>
       <h1 className='contact-title'>contact</h1>
       <div className='contact-form-container'>
         <p>
@@ -37,6 +39,25 @@ const Contact = () => {
           </p>
           <button type='submit'>Send</button>
         </form>
+        <div className='contact-links'>
+          <a href='https://github.com/sevrinn' target='_blank' rel='noreferrer'>
+            <FaGithub size={50} />
+          </a>
+          <a
+            href='https://www.linkedin.com/in/sev-welker/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <FaLinkedin size={50} />
+          </a>
+          <a
+            href='https://twitter.com/sev_welker'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <AiFillTwitterCircle size={50} />
+          </a>
+        </div>
       </div>
     </div>
   )
