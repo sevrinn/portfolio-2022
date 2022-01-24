@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { MdComputer } from 'react-icons/md'
+import { VscFileCode } from 'react-icons/vsc'
 import projectData from '../projectData'
 
 const Projects = () => {
@@ -16,10 +18,24 @@ const Projects = () => {
               <img src={img} alt={title} />
               <div className='project-copy'>
                 <h4>
-                  <Link to={url}>{title}</Link>
+                  <Link className='Link' to={url}>
+                    {title}
+                  </Link>
                 </h4>
 
                 <p>{desc}</p>
+                <div className='proj-links'>
+                  <Link className='Link' to={url}>
+                    <MdComputer size={30} />
+                  </Link>
+                  <a
+                    href='https://github.com/sevrinn/portfolio-2022/tree/main/src/projects'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <VscFileCode size={30} />
+                  </a>
+                </div>
               </div>
             </article>
           )
@@ -30,4 +46,3 @@ const Projects = () => {
 }
 
 export default Projects
-;<h1>projects component</h1>

@@ -173,6 +173,28 @@ nav ul li {
   margin: 2px;
   text-shadow: black 2px 2px;
 }
+
+.Link,
+.Link:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.Link:hover {
+  letter-spacing: 2px;
+}
+
+.proj-links {
+  display: flex;
+  justify-content: flex-start;
+}
+.proj-links > * {
+  margin-right: 20px;
+}
+.proj-links a,
+.proj-links a:visited {
+  color: white;
+}
 /******* ABOUT SECTION **********/
 .about-title {
   color: #d9a64b;

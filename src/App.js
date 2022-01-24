@@ -1,6 +1,6 @@
 import './App.css'
 import './Normalize.css'
-import './projects/Birthday.css'
+// import './projects/Birthday.css'
 import Header from './components/Header'
 import Projects from './components/Projects'
 import About from './components/About'
