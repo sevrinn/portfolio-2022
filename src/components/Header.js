@@ -5,7 +5,7 @@ import Intro from './Intro'
 
 const Header = () => {
   return (
-    <header id='header' className='background-img-intro'>
+    <header id='header' className='header'>
       <div className='full-width'>
         <div className='header-top'>
           <Logo />
