@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import projectData from '../projectData'
 
 const Projects = () => {
@@ -9,12 +10,15 @@ const Projects = () => {
       <h1 className='project-title'>projects</h1>
       <div className='projects-container'>
         {projects.map((project) => {
-          const { id, title, img, desc } = project
+          const { id, url, title, img, desc } = project
           return (
             <article key={id} className='project'>
               <img src={img} alt={title} />
               <div className='project-copy'>
-                <h4>{title}</h4>
+                <h4>
+                  <Link to={url}>{title}</Link>
+                </h4>
+
                 <p>{desc}</p>
               </div>
             </article>
