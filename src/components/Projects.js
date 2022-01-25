@@ -15,7 +15,9 @@ const Projects = () => {
 					const { id, url, github, title, img, desc } = project
 					return (
 						<article key={id} className='project'>
-							<img src={img} alt={title} />
+							<a href={url} target='_blank' rel='noreferrer'>
+								<img src={img} alt={title} />
+							</a>
 							<div className='project-copy'>
 								<h4>
 									<a href={url} target='_blank' rel='noreferrer'>
@@ -25,9 +27,9 @@ const Projects = () => {
 
 								<p>{desc}</p>
 								<div className='proj-links'>
-									<Link className='Link' to={url}>
+									<a href={url} target='_blank' rel='noreferrer'>
 										<MdComputer size={30} />
-									</Link>
+									</a>
 									<a href={github} target='_blank' rel='noreferrer'>
 										<VscFileCode size={30} />
 									</a>
