@@ -18,6 +18,7 @@ const Contact = () => {
           className='contact-form'
           onSubmit='submit'
         >
+          <input type='hidden' name='form-name' value='contact' />
           <p>
             <input
               type='text'
