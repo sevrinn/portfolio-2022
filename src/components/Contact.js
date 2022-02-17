@@ -16,6 +16,7 @@ const Contact = () => {
           method='POST'
           data-netlify='true'
           className='contact-form'
+          onSubmit='submit'
         >
           <p>
             <input
@@ -27,12 +28,7 @@ const Contact = () => {
             />
           </p>
           <p>
-            <input
-              type='email'
-              name='email'
-              placeholder='email'
-              pattern='/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/'
-            />
+            <input type='email' name='email' placeholder='email' />
           </p>
           <p>
             <textarea name='message' placeholder='message'></textarea>
