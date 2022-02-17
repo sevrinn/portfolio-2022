@@ -31,7 +31,7 @@ const Contact = () => {
               type='email'
               name='email'
               placeholder='email'
-              pattern='[A-z\sa-z]{3,20}'
+              pattern='/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/'
             />
           </p>
           <p>
